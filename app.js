@@ -16,6 +16,8 @@ var  express =          require('express'),
 var campgroundRoutes =          require('./routes/campground.js'),
     authRoutes =                require('./routes/auth.js'),
     commentRoutes =             require('./routes/comments.js');
+    
+console.log(process.env.DATABASEURL);
 
 // mongoose.connect("mongodb://localhost/yelp_camp");
 mongoose.connect("mongodb://Kyle:kayleeH5!@ds037195.mlab.com:37195/camp-practice");
